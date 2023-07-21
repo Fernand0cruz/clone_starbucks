@@ -1,0 +1,176 @@
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+.header__nav {
+    max-width: 1380px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.header__nav--logo {
+    width: 40px;
+}
+.header__nav--elements,
+.header__nav--elements-block-content-find_a_store,
+.header__nav--elements-block-content-enter,
+.header__nav--elements-block-content-join_now{
+    display: none;
+}
+.header__nav--active {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.nav__mobile {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 250vh;
+    background-color: var(--white);
+    left: -300px;
+    transition: .4s;
+}
+.nav__mobile--list {
+    padding: 0 0 .5rem 0;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.nav__mobile--list li a {
+    padding: 1rem 2rem;
+    display: block;
+}
+.nav__mobile--list li a:hover, 
+.nav__mobile--element-history a:hover, 
+.nav__mobile--element-find_a_store a:hover {
+    background-color: rgb(235, 235, 235);
+}
+.nav__mobile--element-history a {
+    display: block;
+    padding: 0 5.5rem;
+    margin: 1.5rem 0;
+}
+.nav__mobile--element-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+.nav__mobile--element-btn a {
+    width: 90%;
+    padding: .9rem 0;
+    border-radius: 25px;
+    border: 1px solid var(--black);
+    text-align: center;
+}
+.nav__mobile--element-btn :last-child {
+    background-color: var(--black);
+    color: var(--white);
+}
+.nav__mobile--element-find_a_store a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: .9rem 0;
+    margin: 1rem 0;
+}
+@media screen and (min-width: 320px) {
+    /* Estilos para dispositivos móveis */
+}
+@media screen and (min-width: 768px) {
+    /* Estilos para tablets no modo retrato */
+    .header__nav {
+        gap: 1.5rem;
+    }
+    .header__nav--logo {
+        width: 50px;
+    }
+    .header__nav--active {
+        display: none;
+    }
+    .header__nav--elements {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header__nav--elements-list {
+        display: flex;
+        gap: 1rem;
+    }
+    .header__nav--elements-list li :hover {
+        color: #008248;
+    }
+    .header__nav--elements-list li a {
+        text-transform: uppercase;
+        padding: 2rem 0;
+        font-weight: 900;
+        letter-spacing: .1rem;
+        font-size: .8rem;
+    }
+    .header__nav--elements-block {
+        display: flex;
+    }
+    .header__nav--elements-block-content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 825px) {
+    .header__nav--block {
+        display: flex;
+        gap: 1rem;
+    }
+    .header__nav--elements-block-content-find_a_store {
+        display: block;
+    }
+    .header__nav--elements-block-content-find_a_store a {
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+    }
+}
+@media screen and (min-width: 915px) {
+    .header__nav--elements-block-content-enter {
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        border: 1px solid var(--black);
+        transition: transform 0.1s;
+    }
+    .header__nav--elements-block-content-enter:hover{
+        transform: scale(.9);
+        box-shadow: 0 1px 5px #00000044;
+    }
+    .header__nav--elements-block-content-enter a{
+        padding: .4rem 1rem;
+    }
+}
+@media screen and (min-width: 1150px) {
+    .header__nav--elements-block-content-join_now {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--black);
+        border-radius: 25px;
+        background-color: var(--black);
+        transition: transform 0.1s;
+    }
+    .header__nav--elements-block-content-join_now:hover{
+        transform: scale(.9);
+        box-shadow: 0 1px 5px #00000044;
+    }
+    .header__nav--elements-block-content-join_now a {
+        padding: .4rem 1rem;
+        color: var(--white);
+    }
+}
+@media screen and (min-width: 992px) {
+    /* Estilos para tablets no modo paisagem */
+}
+@media screen and (min-width: 1200px) {
+    /* Estilos para desktops */
+}

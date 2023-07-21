@@ -1,0 +1,40 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* code section */
+@import url("reset.css");
+@import url("sections/header.css");
+@import url("sections/main.css");
+@import url("sections/footer.css");
+
+
+/* variables css*/
+:root {
+    --primary_color: #1e3932;
+    --secundary_color: #d4e9e2;
+
+    /* --primary_text_color:; */
+    /* --secundary_text_color:; */
+
+    --white: #ffffff;
+    --black: #000000;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+header {
+    box-shadow: 0 1px 5px #00000044;
+    position: relative;
+}
+main {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer {
+    margin-top: 2rem;
+    box-shadow: 0 -1px 5px #00000044;
+}
